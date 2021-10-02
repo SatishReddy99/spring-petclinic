@@ -7,5 +7,16 @@ pipeline {
             }
      
         }
+
+
+        stage("checkout the code ") {
+            steps {
+                sh "mvn clean install"
+            }
+
+        }
+
+
+
     }
 }
